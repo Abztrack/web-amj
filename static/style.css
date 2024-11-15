@@ -1,0 +1,57 @@
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Basic styling for sidebar/menu */
+.w3-sidebar {
+  position: fixed;
+  z-index: 3;
+  width: 300px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #f44336; /* Red color */
+  color: #fff;
+  padding-top: 50px;
+  font-weight: bold;
+  overflow-x: hidden;
+  transition: 0.3s; /* Smooth transition */
+}
+
+.w3-sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s; /* Smooth transition */
+}
+
+.w3-sidebar a:hover {
+  background-color: #ddd; /* Light grey background on hover */
+  color: #000;
+}
+
+.w3-sidebar .w3-container {
+  padding: 20px;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 992px) {
+  .w3-sidebar {
+      width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .w3-sidebar {
+      width: 100%;
+      height: auto;
+  }
+}

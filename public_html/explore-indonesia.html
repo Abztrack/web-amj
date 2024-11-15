@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Explore the breathtaking natural beauty of Indonesia.">
+    <meta name="author" content="Devcrud">
+    <meta name="X-Powered-By" content="Golang">
+    <link rel="icon" type="image/svg+xml" href="assets/imgs/placeholder.svg">
+    <title>Explore - Wonderful Indonesia</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/dorang.css">
+    <!-- CSS for custom scrollbar and background -->
+    <style>
+        /* Gaya scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px; /* Lebar scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #161e2b; /* Warna latar belakang scrollbar */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1b2a39; /* Warna handle scrollbar */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2b4157; /* Warna handle scrollbar saat hover */
+        }
+
+        /* Tombol Back Home */
+        .back-home {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #007bff; /* Warna biru tombol */
+            color: #fff; /* Warna teks putih */
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 1000;
+            text-decoration: none;
+            border-radius: 5px; /* Sudut melengkung */
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .back-home:hover {
+            background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+        }
+
+        /* Page Container */
+        .page-container {
+            padding-bottom: 60px; /* Untuk menghindari tumpang tindih dengan tombol Back Home */
+        }
+
+        /* Header Background */
+        .header {
+            position: relative;
+            background-image: url('assets/imgs/header3.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            height: auto; /* Menyesuaikan tinggi header */
+            padding: 40px 20px;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Footer Styling */
+        .footer {
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px; /* Menyesuaikan tinggi footer */
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Tombol Back Home -->
+    <a href="/home" class="back-home">Back Home</a>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h6 class="title mb-4 mt-5 pt-5">Explore Indonesia</h6>
+            <p class="mb-5">Explore the breathtaking natural beauty of Indonesia, a vast archipelago that promises an adventure for every traveler. From the crystal-clear waters of Raja Ampat, where vibrant coral reefs and diverse marine life create a diver's paradise, to the lush rainforests of Sumatra, teeming with exotic wildlife and hidden waterfalls, Indonesia's landscapes are as varied as they are stunning.</p>
+            <p class="mb-5">Wander through the terraced rice fields of Bali, where verdant green paddies meet serene temples, offering a glimpse into the island's rich cultural heritage. Embark on a journey to the volcanic landscapes of Java, where ancient temples like Borobudur and Prambanan stand as timeless monuments to Indonesia's historical significance.</p>
+        </div>
+    </header>
+
+    <!-- Page Container -->
+    <div class="container page-container">
+        <div class="col-md-10 col-lg-8 m-auto">
+            
+        </div>  
+
+        <!-- Row -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <a href="javascript:void(0)" class="overlay-img">
+                    <img src="assets/imgs/img-1.jpg" alt="Experience Raja Ampat">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Experience Raja Ampat</h1>
+                        <h6 class="subtitle">Dive into the Coral Paradise</h6>
+                        <p>Discover the vibrant coral reefs and marine life of Raja Ampat, a haven for diving enthusiasts and nature lovers alike.</p>
+                    </div>          
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="javascript:void(0)" class="overlay-img">
+                    <img src="assets/imgs/img-2.jpg" alt="Explore Bali">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Bali: The Enchanted Isle</h1>
+                        <h6 class="subtitle">The Island of Gods</h6>
+                        <p>Immerse yourself in the cultural wonders and scenic beauty of Bali, where ancient temples and picturesque landscapes await.</p>
+                    </div>          
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="javascript:void(0)" class="overlay-img">
+                    <img src="assets/imgs/img-3.jpg" alt="Discover Komodo Island">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">Discover Komodo Island</h1>
+                        <h6 class="subtitle">Home of the Komodo Dragons</h6>
+                        <p>Experience the prehistoric charm of Komodo Island, where the world's largest lizards roam freely in their natural habitat.</p>
+                    </div>          
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="javascript:void(0)" class="overlay-img">
+                    <img src="assets/imgs/img-4.jpg" alt="Fourth Image">  
+                    <div class="overlay"></div> 
+                    <div class="des">
+                        <h1 class="title">The Beauty of Bunaken's</h1>
+                        <h6 class="subtitle">Exciting Adventure Awaits</h6>
+                        <p>Natural beauty and diversity in Bunaken National Park.</p>
+                    </div>          
+                </a>
+            </div>
+        </div><!-- End of Row -->
+
+        <!-- Carousel -->
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div id="explore-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-5.jpg" alt="Fifth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">Kei Island: The Hidden Jewel</h1>
+                                            <h6 class="subtitle">Explore Hidden Gems</h6>
+                                            <p>Embark on a journey to discover hidden gems and untouched beauty.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-6.jpg" alt="Sixth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">Nias Stone Jump Tradition</h1>
+                                            <h6 class="subtitle">Experience Tradition</h6>
+                                            <p>Immerse yourself in the rich cultural traditions of Indonesia.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-7.jpg" alt="Seventh Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">Explore Solo: The Soul of Java</h1>
+                                            <h6 class="subtitle">Javanese Heritage</h6>
+                                            <p>Discover the historical and architectural wonders of Java.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-8.jpg" alt="Eighth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">The Beauty of Penida Island</h1>
+                                            <h6 class="subtitle">Pristine Paradise</h6>
+                                            <p>Explore the pristine beaches and clear waters of Penida Island.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-9.jpg" alt="Eighth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">The Serenity Giant at Lake Toba</h1>
+                                            <h6 class="subtitle">The World's Largest Volcanic Lake</h6>
+                                            <p>Experience the serenity of Lake Toba, surrounded by lush mountains and rich Batak culture.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-10.jpg" alt="Eighth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">Witness Mount Bromo's Majesty</h1>
+                                            <h6 class="subtitle">The Iconic Volcano</h6>
+                                            <p>Marvel at the dramatic landscapes and stunning sunrise views of Mount Bromo.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-11.jpg" alt="Eighth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">Discover the Derawan Islands</h1>
+                                            <h6 class="subtitle">The Marine Wonderland</h6>
+                                            <p>Dive into a tropical paradise with pristine beaches, clear waters, and abundant marine life.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-12.jpg" alt="Eighth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">Cultural Oasis of Ubud</h1>
+                                            <h6 class="subtitle">The Cultural Heart of Bali</h6>
+                                            <p> Visit Ubud for its art galleries, traditional dance performances, and scenic rice terraces.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-13.jpg" alt="Eighth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">Yogyakarta: The Cultural Capital</h1>
+                                            <h6 class="subtitle">The City of Culture</h6>
+                                            <p>Discover Yogyakarta's rich history, traditional arts, and proximity to Borobudur and Prambanan temples.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-14.jpg" alt="Eighth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">Escape to the Gili Islands</h1>
+                                            <h6 class="subtitle">The Tranquil Retreat</h6>
+                                            <p>Relax on the Gili Islands with their clear waters, vibrant marine life, and laid-back atmosphere.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-15.jpg" alt="Eighth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">Discover Belitung Island</h1>
+                                            <h6 class="subtitle">The Hidden Treasure</h6>
+                                            <p> Enjoy Belitung's white sandy beaches, crystal-clear waters, and unique granite rock formations.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" class="overlay-img">
+                                        <img src="assets/imgs/img-16.jpg" alt="Eighth Image">  
+                                        <div class="overlay"></div> 
+                                        <div class="des">
+                                            <h1 class="title">Discover The Hidden Gem Flores</h1>
+                                            <h6 class="subtitle">The Enchanted Explorer's Haven</h6>
+                                            <p>Discover diverse landscapes, traditional villages, and vibrant marine life on Flores Island.</p>
+                                        </div>          
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End of Carousel -->
+
+    </div> <!-- End of Page Container -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script>, Indonesia. Visit the page of <a href="https://www.kemenparekraf.go.id/" target="_blank">kemenparekraf</a></p>
+    </footer>
+
+</body>
+</html>

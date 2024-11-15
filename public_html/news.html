@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Stay updated with the latest stories from Indonesia.">
+    <meta name="author" content="Devcrud">
+    <meta name="X-Powered-By" content="Golang">
+    <link rel="icon" type="image/svg+xml" href="assets/imgs/placeholder.svg">
+    <title>News - Wonderful Indonesia</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/dorang.css">
+    <!-- CSS for custom scrollbar and background -->
+    <style>
+        /* Gaya scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px; /* Lebar scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #161e2b; /* Warna latar belakang scrollbar */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1b2a39; /* Warna handle scrollbar */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2b4157; /* Warna handle scrollbar saat hover */
+        }
+
+        /* Tombol Back Home */
+        .back-home {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #007bff; /* Warna biru tombol */
+            color: #fff; /* Warna teks putih */
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 1000;
+            text-decoration: none;
+            border-radius: 5px; /* Sudut melengkung */
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .back-home:hover {
+            background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+        }
+
+        /* Page Container */
+        .page-container {
+            padding-bottom: 60px; /* Untuk menghindari tumpang tindih dengan tombol Back Home */
+        }
+
+        /* Header Background */
+        .header {
+            position: relative;
+            background-image: url('assets/imgs/header4.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            height: auto; /* Menyesuaikan tinggi header */
+            padding: 40px 20px;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Footer Styling */
+        .footer {
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px; /* Menyesuaikan tinggi footer */
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Tombol Back Home -->
+    <a href="/home" class="back-home">Back Home</a>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h6 class="title mb-4 mt-5 pt-5">News</h6>
+            <p class="mb-5">
+                Stay updated with the latest stories and insights from Indonesia's vibrant tapestry of cultural richness and natural wonders. Our news section is your gateway to exploring the diverse and dynamic landscape of this archipelago. Dive deep into fascinating articles and updates that cover everything from the enchanting traditions and festivals that define the essence of Indonesian culture, to groundbreaking discoveries and environmental conservation efforts that highlight the country's unique biodiversity.
+            </p>
+            <p class="mb-5">
+                Discover in-depth features on Indonesia's most captivating destinations, where you can learn about hidden gems and iconic landmarks alike. Whether you're interested in the cultural significance of ancient rituals, the allure of pristine natural reserves, or the latest developments in sustainable tourism, our news section offers a comprehensive view into what makes Indonesia a truly remarkable place.
+            </p>
+        </div>
+    </header>
+
+    <!-- Page Container -->
+    <div id="journal" class="container page-container">
+        <div class="col-md-10 col-lg-8 m-auto">
+
+        
+        <!-- row -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <a href="javascript:void(0)" class="card">
+                    <img src="assets/imgs/blog-1.jpg" class="card-img" alt="Exploring the Rich Heritage of Yogyakarta">
+                    <div class="card-body">
+                        <h6 class="card-subtitle">29 April, 2024</h6>
+                        <h3 class="card-title">Exploring the Rich Heritage of Yogyakarta</h3>
+                        <p>Discover the cultural treasures and historical marvels of Yogyakarta, a city steeped in Javanese tradition and royal legacy.</p>
+                    </div>                  
+                </a>
+            </div>  
+            <div class="col-md-6">
+                <a href="javascript:void(0)" class="card">
+                    <img src="assets/imgs/blog-2.jpg" class="card-img" alt="A Journey through the Breathtaking Bromo-Tengger-Semeru National Park">
+                    <div class="card-body">
+                        <h6 class="card-subtitle">29 May, 2024</h6>
+                        <h3 class="card-title">A Journey through the Breathtaking Bromo-Tengger-Semeru National Park</h3>
+                        <p>Embark on an unforgettable adventure through the volcanic landscapes and ethereal beauty of Bromo-Tengger-Semeru National Park.</p>
+                    </div>                  
+                </a>
+            </div>  
+        </div><!-- end of row -->
+
+        <!-- row 2 -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <a href="javascript:void(0)" class="card">
+                    <img src="assets/imgs/blog-3.jpg" class="card-img" alt="Third Blog Image">
+                    <div class="card-body">
+                        <h6 class="card-subtitle">15 June, 2024</h6>
+                        <h3 class="card-title">The Enchanting Waters of Lake Toba</h3>
+                        <p>Explore the serene beauty and cultural significance of Lake Toba, the largest volcanic lake in the world.</p>
+                    </div>                  
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="javascript:void(0)" class="card">
+                    <img src="assets/imgs/blog-4.jpg" class="card-img" alt="Fourth Blog Image">
+                    <div class="card-body">
+                        <h6 class="card-subtitle">10 July, 2024</h6>
+                        <h3 class="card-title">Discovering Java's Hidden Temples</h3>
+                        <p>Uncover the secrets of Java's hidden temples, a testament to Indonesia's rich cultural heritage.</p>
+                    </div>                  
+                </a>
+            </div>
+        </div><!-- end of row 2 -->
+
+    </div> <!-- End of Page Container -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script>, Indonesia. Visit the page of <a href="https://www.kemenparekraf.go.id/" target="_blank">kemenparekraf</a></p>
+    </footer>
+
+</body>
+</html>

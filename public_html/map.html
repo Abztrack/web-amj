@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Map page for Wonderful Indonesia">
+    <meta name="author" content="Devcrud">
+    <meta name="X-Powered-By" content="Golang">
+    <link rel="icon" type="image/svg+xml" href="assets/imgs/placeholder.svg">
+    <title>Map - Wonderful Indonesia</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/dorang.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            border: 10px solid #1b2a39; /* Thin border around the map */
+            box-sizing: border-box; /* Include border in the element's total width and height */
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .overlay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            color: #fff;
+            border-radius: 10px;
+            max-width: 300px;
+            z-index: 1000; /* Ensure it appears above the map */
+        }
+        .back-button {
+            display: block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            z-index: 1000; /* Ensure button is on top of other elements */
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Map Container -->
+    <div class="map-container">
+        <!-- Floating Overlay -->
+        <div class="overlay">
+            <h6 class="title">Map of Indonesia</h6>
+            <p>Explore the stunning natural beauty and cultural diversity of Indonesia through our interactive map.</p>
+            <!-- Back to Home Button -->
+            <a href="/home" class="back-button">Back to Home</a>
+        </div>
+        <!-- Google Map Embed -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25342709.872593064!2d113.41836203843017!3d-2.483382627057671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708c79139cb91d%3A0x2ff769ca8c4b8d36!2sIndonesia!5e0!3m2!1sen!2sid!4v1599679329443!5m2!1sen!2sid&maptype=satellite" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/dorang.js"></script>
+
+</body>
+</html>
